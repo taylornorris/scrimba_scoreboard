@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "CursedTimer";
+    src: url("fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.score_text, button {
+    font-family: "CursedTimer", sans-serif;
+}
+
+
+.container {
+    width: 575px;
+    height: 385px;
+    margin: 150px auto;
+    background: #1B244A;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.score_text {
+    color: #F94F6D;
+    font-size: 90px;
+    padding-top: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EEEEEE;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.score_div {
+    width: 155px;
+    height: 120px;
+    margin: 21px 0 26px 0;
+    background: #080001;
+    line-height: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.point_btn {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    color: #9AABD8;
+    background: none;
+    border: 2px solid #9AABD8;
+}
+
+.score_div, button {
+    border-radius: 5px;
+}
