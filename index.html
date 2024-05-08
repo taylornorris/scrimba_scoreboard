@@ -13,12 +13,12 @@
         <div class="card">
             <h3 class="name">HOME</h3>
             <div class="score_div">
-                <span class="score_text">0</span>
+                <span class="score_text" id="home_score_el"></span>
             </div>
             <div class="button_div">
-                <button class="point_btn">+1</button>
-                <button class="point_btn">+2</button>
-                <button class="point_btn">+3</button>
+                <button class="point_btn" onclick="homePlusOne()">+1</button>
+                <button class="point_btn" onclick="homePlusTwo()">+2</button>
+                <button class="point_btn" onclick="homePlusThree()">+3</button>
             </div>
         </div>
 
@@ -26,12 +26,12 @@
         <div class="card">
             <h3 class="name">GUEST</h3>
             <div class="score_div">
-                <span class="score_text">0</span>
+                <span class="score_text" id="guest_score_el"></span>
             </div>
             <div class="button_div">
-                <button class="point_btn">+1</button>
-                <button class="point_btn">+2</button>
-                <button class="point_btn">+3</button>
+                <button class="point_btn" onclick="guestPlusOne()">+1</button>
+                <button class="point_btn" onclick="guestPlusTwo()">+2</button>
+                <button class="point_btn" onclick="guestPlusThree()">+3</button>
             </div>
         </div>
 
