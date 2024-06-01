@@ -1,2 +1,2 @@
 # scrimba_scoreboard
-Learning with Scrimba. Solo Project - Basketball Scoreboard
+Scrimba Solo Project 2 - Scoreboard
