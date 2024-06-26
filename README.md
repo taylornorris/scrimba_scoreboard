@@ -1,13 +1,17 @@
 # scrimba_scoreboard
-Scrimba Solo Project 2 - Scoreboard
+<h1>Scrimba Solo Project 2 - Scoreboard</h1>
 
-Requirements <br>
-    - Bulid from scratch ✅ <br>
-    - Follow figma design ✅ <br>
-    - Make all six buttons work ✅ <br>
+<h2>Requirements</h2>
+<ul> 
+    <li>Bulid from scratch ✅</li> 
+    <li>Follow figma design ✅</li> 
+    <li>Make all six buttons work ✅</li>
+</ul> 
 
-Stretch Goals <br>
-    - Add "New Game" button ✅ <br>
-    - Highlight the leader <br>
-    - Add more counters (period, fouls, etc) <br>
-    - Change the design
+<h2>Stretch Goals</h2>
+<ul> 
+    <li>Add "New Game" button ✅</li> 
+    <li>Highlight the leader</li> 
+    <li>Add more counters (period, fouls, etc)</li> 
+    <li>Change the design</li>
+</ul>
