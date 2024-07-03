@@ -1,45 +1,51 @@
-let homeScoreEl = document.getElementById("home_score_el")
-let guestScoreEl = document.getElementById("guest_score_el")
+const homeScoreEl = document.getElementById("home_score_el")
+const guestScoreEl = document.getElementById("guest_score_el")
 
 let homeScore = 0
 let guestScore = 0
 
-homeScoreEl.textContent = 0
-guestScoreEl.textContent = 0
+homeScoreEl.textContent = homeScore
+guestScoreEl.textContent = guestScore
 
-function homePlusOne() {
-    homeScore += 1
-    homeScoreEl.textContent = homeScore
+function updateScore(team, points) {
+    if (team === "home") {
+        homeScore += points
+        homeScoreEl.textContent = homeScore
+    }
+    else if (team === "guest") {
+        guestScore += points
+        guestScoreEl.textContent = guestScore
+    }
 }
 
-function homePlusTwo() {
-    homeScore += 2
-    homeScoreEl.textContent = homeScore
-}
+document.getElementById("h1").addEventListener("click", () => 
+    updateScore("home", 1)
+)
 
-function homePlusThree() {
-    homeScore += 3
-    homeScoreEl.textContent = homeScore
-}
+document.getElementById("h2").addEventListener("click", () => 
+    updateScore("home", 2)
+)
 
-function guestPlusOne() {
-    guestScore += 1
-    guestScoreEl.textContent = guestScore
-}
+document.getElementById("h3").addEventListener("click", () => 
+    updateScore("home", 3)
+)
 
-function guestPlusTwo() {
-    guestScore += 2
-    guestScoreEl.textContent = guestScore
-}
+document.getElementById("g1").addEventListener("click", () => 
+    updateScore("guest", 1)
+)
 
-function guestPlusThree() {
-    guestScore += 3
-    guestScoreEl.textContent = guestScore
-}
+document.getElementById("g2").addEventListener("click", () => 
+    updateScore("guest", 2)
+)
 
-function newGame() {
+document.getElementById("g3").addEventListener("click", () => 
+    updateScore("guest", 3)
+)
+
+
+document.getElementById("new_game").addEventListener("click", () => {
     homeScore = 0
     guestScore = 0
     homeScoreEl.textContent = homeScore
     guestScoreEl.textContent = guestScore
-}
+})
