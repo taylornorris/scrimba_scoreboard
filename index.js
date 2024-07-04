@@ -1,5 +1,7 @@
 const homeScoreEl = document.getElementById("home_score_el")
 const guestScoreEl = document.getElementById("guest_score_el")
+const homeScoreDiv = document.getElementById("home_score_div")
+const guestScoreDiv = document.getElementById("guest_score_div")
 
 let homeScore = 0
 let guestScore = 0
@@ -15,6 +17,13 @@ function updateScore(team, points) {
     else if (team === "guest") {
         guestScore += points
         guestScoreEl.textContent = guestScore
+    }
+    highlightLeader()
+}
+
+function highlightLeader() {
+    if (homeScore > guestScore) {
+        homeScoreDiv.className = "leader"
     }
 }
 
@@ -49,3 +58,4 @@ document.getElementById("new_game").addEventListener("click", () => {
     homeScoreEl.textContent = homeScore
     guestScoreEl.textContent = guestScore
 })
+

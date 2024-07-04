@@ -31,7 +31,6 @@
     margin: 15px auto;
     padding: 4px;
     display: block;
-    /* color: #EEEEEE; */
     font-size: 14px;
     font-weight: bold;
 
@@ -57,7 +56,8 @@
     font-weight: bold;
 }
 
-.score_div {
+#home_score_div,
+#guest_score_div {
     width: 155px;
     height: 120px;
     margin: 21px 0 26px 0;
@@ -67,6 +67,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.leader {
+    border: 2px solid limegreen;
 }
 
 button {
