@@ -8,6 +8,29 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #343a40;
+}
+
+
+/* TYPOGRAPHY */
+.name {
+    color: #EEEEEE;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.score_text, .point_btn {
+    font-family: "CursedTimer", sans-serif;
+}
+
+.score_text {
+    color: #F94F6D;
+    font-size: 90px;
+    padding-top: 15px;
+}
+
+/* DESIGN */
 .container {
     width: 575px;
     height: 385px;
@@ -17,30 +40,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.score_text, .point_btn {
-    font-family: "CursedTimer", sans-serif;
-}
-
-.score_display {
+.display {
     display: flex;
-    justify-content: space-around;
-}
-
-#new_game {
-    width: 120px;
-    margin: 15px auto;
-    padding: 4px;
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-
-}
-
-
-.score_text {
-    color: #F94F6D;
-    font-size: 90px;
-    padding-top: 15px;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -48,12 +50,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center ;
-}
-
-.name {
-    color: #EEEEEE;
-    font-size: 40px;
-    font-weight: bold;
 }
 
 #home_score_div,
@@ -69,13 +65,17 @@
     align-items: center;
 }
 
-.leader {
-    border: 2px solid limegreen;
+.period_container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-button {
-    color: #9AABD8;
-    background: none;
+.period_div {
+    width: 40%;
+    height: 40px;
     border: 2px solid #9AABD8;
 }
 
@@ -85,6 +85,28 @@ button {
     justify-content: space-between;
 }
 
+.radius {
+    border-radius: 5px;
+}
+
+/* BUTTON STYLES */
+#new_game_btn,
+#period_btn {
+    width: 120px;
+    margin: 15px auto;
+    padding: 4px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button {
+    color: #9AABD8;
+    background: none;
+    border: 2px solid #9AABD8;
+    transition: all 0.1s ease-in-out;
+}
+
 .point_btn {
     width: 45px;
     height: 45px;
@@ -92,13 +114,20 @@ button {
 }
 
 button:hover {
+    cursor: pointer;
     border: 2px solid #F94F6D;
+    transform: scale(1.1);
 }
 
 button:active {
     background: #F94F6D;
 }
 
-.score_div, button {
-    border-radius: 5px;
+/* JS */
+.leader {
+    border: 2px solid limegreen;
+}
+
+.background_red {
+    background-color: #F94F6D;
 }

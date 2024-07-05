@@ -9,33 +9,44 @@
 <body>
     <div class="container">
         
-        <button id="new_game">NEW GAME</button>
+        <button id="new_game_btn" class="radius">NEW GAME</button>
         
-        <div class="score_display">
+        <div class="display">
 
             <!-- HOME CARD -->
             <div class="card">
                 <h3 class="name">HOME</h3>
-                <div id="home_score_div" class="">
+                <div id="home_score_div" class="radius">
                     <span class="score_text" id="home_score_el"></span>
                 </div>
                 <div class="button_div">
-                    <button id="h1"class="point_btn">+1</button>
-                    <button id="h2"class="point_btn">+2</button>
-                    <button id="h3"class="point_btn">+3</button>
+                    <button id="h1"class="point_btn radius">+1</button>
+                    <button id="h2"class="point_btn radius">+2</button>
+                    <button id="h3"class="point_btn radius">+3</button>
                 </div>
             </div>
+
+            <!-- PERIOD COUNTER -->
+             <div class="card" >
+                <button id="period_btn" class="radius">PERIOD</button>
+                <div class="period_container">
+                    <div id="period_one" class="period_div radius background_red"></div>
+                    <div id="period_two" class="period_div radius"></div>
+                    <div id="period_three" class="period_div radius"></div>
+                    <div id="period_four" class="period_div radius"></div>
+                </div>
+             </div>
 
             <!-- GUEST CARD -->
             <div class="card">
                 <h3 class="name">GUEST</h3>
-                <div id="guest_score_div">
+                <div id="guest_score_div" class="radius">
                     <span class="score_text" id="guest_score_el"></span>
                 </div>
                 <div class="button_div">
-                    <button id="g1"class="point_btn">+1</button>
-                    <button id="g2"class="point_btn">+2</button>
-                    <button id="g3"class="point_btn">+3</button>
+                    <button id="g1"class="point_btn radius">+1</button>
+                    <button id="g2"class="point_btn radius">+2</button>
+                    <button id="g3"class="point_btn radius">+3</button>
                 </div>
             </div>
             
