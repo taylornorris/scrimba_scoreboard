@@ -54,16 +54,16 @@ function updateScore(team, points) {
 
 function highlightLeader() {
     if (homeScore > guestScore) {
-        homeScoreDiv.className = "leader"
-        guestScoreDiv.className = ""
+        homeScoreDiv.classList.add("leader")
+        guestScoreDiv.classList.remove("leader")
     } 
     else if (guestScore > homeScore) {
-        guestScoreDiv.className = "leader"
-        homeScoreDiv.className = ""
+        guestScoreDiv.classList.add("leader")
+        homeScoreDiv.classList.remove("leader")
     }
     else {
-        guestScoreDiv.className = ""
-        homeScoreDiv.className = ""  
+        guestScoreDiv.classList.remove("leader")
+        homeScoreDiv.classList.remove("leader")  
     }
 }
 
