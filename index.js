@@ -19,14 +19,14 @@ document.getElementById("new_game_btn").addEventListener("click", () => {
     guestScore = 0
     homeScoreEl.textContent = homeScore
     guestScoreEl.textContent = guestScore
-    homeScoreDiv.className = ""
-    guestScoreDiv.className = ""
+    homeScoreDiv.classList.remove("leader")
+    guestScoreDiv.classList.remove("leader")
     periodTwoDiv.classList.remove("background_red")
     periodThreeDiv.classList.remove("background_red")
     periodFourDiv.classList.remove("background_red")
 })
 
-document.getElementById("period_btn").addEventListener("click", function() {
+document.getElementById("period_btn").addEventListener("click", () => {
     if (period === 1) {
         periodTwoDiv.classList.add("background_red")
     }
